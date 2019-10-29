@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <meta content="index, follow" name="robots">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/registration.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <div class="registration">
+        <div class="registration-profile">
+            <img src="images/icons/user_registration_icon.png">
+            <h1>Регистрация</h1>
+        </div>
+        <form class="registration-form" method="POST">
+            <div>
+                <label for="name">Имя</label>
+                <input id="name" name="name" placeholder="Имя" required type="text">
+            </div>
+            <div>
+                <label for="email">Электронный адрес</label>
+                <input id="email" name="email" placeholder="E-mail" required type="email">
+            </div>
+            <div>
+                <label for="password">Пароль</label>
+                <input id="password" name="password" placeholder="Пароль" required type="password">
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+            <div class="registration-form_footer">
+                <span>
+                    Регистрируясь, вы принимаете условия
+                    <a href="#">пользовательского соглашения</a>
+                </span>
+            </div>
+        </form>
+    </div>
+</main>
+</body>
+</html>

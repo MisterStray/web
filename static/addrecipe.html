@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Рецепт</title>
+    <meta content="index, follow" name="robots">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/addrecipe.css" rel="stylesheet">
+</head>
+<body class="main-page">
+<header class="site-header">
+    <div class="rounded-header recipes-nav-wrap">
+        <div class="recipes-nav">
+            <ul>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Выпечка</a></li>
+                <li><a href="#">Напитки</a></li>
+                <li><a href="#">Салаты</a></li>
+                <li><a href="#">Блюда из мяса</a></li>
+                <li><a href="#">Супы и бульоны</a></li>
+                <li><a href="#">Гарниры</a></li>
+                <li><a href="#">Закрутки</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="search-wrap container-fluid">
+        <div class="row centered-content">
+            <div class="col-7">
+                <form action="#" method="get">
+                    <input name="name" placeholder="Поиск по xxx рецептам" type="text" value="">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="col">
+                <a class="header-button" href="#">Поиск по игнридиентам</a>
+            </div>
+            <div class="col">
+                <a class="header-button" href="#">Добавить рецепт</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipes-nav-wrap">
+        <div class="recipes-nav bold">
+            <ul>
+                <li><a href="#">Все рецепты</a></li>
+                <li><a href="#">Новые рецепты</a></li>
+                <li><a href="#">Самое популярное</a></li>
+                <li><a href="#">Национальные рецепты</a></li>
+                <li><a href="#">Низкокалорийные блюда</a></li>
+                <li><a href="#">Тематическая кухня</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="add-recipe">
+        <div>
+            <h1>Добавление рецепта</h1>
+        </div>
+
+        <div class="add-recipe-textarea add-recipe-title">
+            <label for="title">Название вашего рецепта</label>
+            <textarea autocomplete="off" autofocus id="title" maxlength="50" name="title" required
+                      title="Название вашего рецепта"></textarea>
+        </div>
+        <div class="add-recipe-textarea add-recipe-description">
+            <label for="description">Краткое описание</label>
+            <textarea autocomplete="off" id="description" maxlength="300"
+                      name="description" placeholder="Кратко опишите блюдо, его особенности и вкусовые качества"
+                      title="Краткое описание рецепта"></textarea>
+        </div>
+        <div class="centered-container">
+            <label class="add-recipe-label add-recipe-ingredient-label">Ингредиенты, используемые в блюде</label>
+            <div class="add-recipe-ingredient">
+                <input autocomplete="off" class="add-recipe-ingredient_name" name="ingredientName"
+                       placeholder="Укажите ингредиенты"
+                       type="text">
+                <input class="add-recipe-ingredient_amount" max="10000" min="1" name="ingredientAmount" type="number"
+                       value="0">
+                <div class="add-recipe-ingredient_select_container">
+                    <select class="form-control" required>
+                        <option>Грамм</option>
+                        <option>Килограмм</option>
+                        <option>Литр</option>
+                        <option>Миллилитр</option>
+                        <option>Столовая ложна</option>
+                        <option>Чайная ложка</option>
+                        <option>Щепотка</option>
+                        <option>Штука</option>
+                    </select>
+                </div>
+            </div>
+            <button class="delete-button"></button>
+        </div>
+        <div class="add-recipe-ingredient_add">
+            <button type="button">Добавить ингредиент</button>
+        </div>
+        <div class="add-recipe-textarea add-recipe-step">
+            <label>Описание шагов</label>
+            <div class="add-recipe-step-container">
+                <textarea autocomplete="off" autofocus maxlength="500" required
+                          title="Описание шага"></textarea>
+                <div class="add-recipe-step_load_photo">
+                    <input accept="image/jpeg, image/png" class="upload-file" enctype="multipart/form-data"
+                           id="recipe-photo-file"
+                           multiple="" name="image" type="file">
+                    <label for="recipe-photo-file">
+                        <span>Выберите фотографию, изображающую шаг приготовления блюда</span>
+                        <img src="images/icons/add_photo.png">
+                    </label>
+                </div>
+            </div>
+            <button class="delete-button"></button>
+        </div>
+        <div class="add-recipe-ingredient_add">
+            <button type="button">Добавить шаг</button>
+        </div>
+        <div class="add-recipe-footer">
+            <div class="add-recipe-ingredient_add">
+                <button type="button">Опубликовать</button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

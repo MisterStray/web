@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+main {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #7b7b7b;
+}
+
+body {
+    font-family: 'Roboto', serif;
+    font-size: 18px;
+    color: black;
+}
+
+.registration {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #FFD500;
+    border-radius: 20px;
+}
+
+/** REGION .registration_profile **/
+.registration-profile {
+    float: left;
+    text-align: center;
+    align-self: center;
+    padding: 0 30px;
+    margin: 30px;
+}
+
+.registration-profile img {
+    width: 128px;
+    height: 128px;
+}
+
+.registration-profile h1 {
+    font-size: 24px;
+    font-weight: normal;
+    position: relative;
+    margin: 50px 0 0 0;
+}
+
+.registration-profile h1:after {
+    content: ' ';
+    width: 48px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-size: auto 48px;
+    background-image: url("../images/icons/next.png");
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/** END REGION **/
+
+/** REGION .registration-form **/
+.registration-form {
+    background: white;
+    float: left;
+    padding: 30px 30px 0 30px;
+    border-radius: 0 20px 20px 0;
+    color: #666666;
+}
+
+.registration-form div {
+    margin-bottom: 16px;
+}
+
+.registration-form label {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.registration-form input {
+    border: solid 1px #E2DED4;
+    outline: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px 19px;
+    background: #FFF;
+    border-radius: 4px;
+}
+
+.registration-form input:focus {
+    box-shadow: inset 0 0 0 2px #9AB8E7;
+}
+
+.registration-form button {
+    border-width: 0;
+    border-radius: 4px;
+    padding: 10px 19px;
+    display: block;
+    outline: none;
+    margin: 24px auto 10px auto;
+    background: #FFD500;
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.registration-form button:hover {
+    box-shadow: inset 0 0 0 1px yellow;
+}
+
+/** END REGION **/
+
+
+/** REGION .registration-form_footer **/
+.registration-form_footer {
+    padding: 8px 0 0 0;
+    margin: 32px 0 0 0;
+    border-top: 1px solid #E2DED4;
+    font-size: 12px;
+    display: block;
+}
+
+.registration-form_footer a {
+    font-weight: bold;
+}
+
+/** ENDREGION **/

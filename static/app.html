@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Книга рецептов</title>
+    <meta content="Книга рецептов" lang="ru" name="keywords">
+    <meta content="Recipe" lang="en" name="keywords">
+    <meta content="index, follow" name="robots">
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body class="main-page">
+<header class="site-header">
+    <div class="rounded-header recipes-nav-wrap">
+        <div class="recipes-nav">
+            <ul>
+                <li><a href="#">Десерты</a></li>
+                <li><a href="#">Выпечка</a></li>
+                <li><a href="#">Напитки</a></li>
+                <li><a href="#">Салаты</a></li>
+                <li><a href="#">Блюда из мяса</a></li>
+                <li><a href="#">Супы и бульоны</a></li>
+                <li><a href="#">Гарниры</a></li>
+                <li><a href="#">Закрутки</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="search-wrap container-fluid">
+        <div class="row centered-content">
+            <div class="col-7">
+                <form action="#" method="get">
+                    <input name="name" placeholder="Поиск по xxx рецептам" type="text" value="">
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <div class="col">
+                <a class="header-button" href="#">Поиск по игнридиентам</a>
+            </div>
+            <div class="col">
+                <a class="header-button" href="#">Добавить рецепт</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="recipes-nav-wrap">
+        <div class="recipes-nav bold">
+            <ul>
+                <li><a href="#">Все рецепты</a></li>
+                <li><a href="#">Новые рецепты</a></li>
+                <li><a href="#">Самое популярное</a></li>
+                <li><a href="#">Национальные рецепты</a></li>
+                <li><a href="#">Низкокалорийные блюда</a></li>
+                <li><a href="#">Тематическая кухня</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="site-content">
+        <div class="site-content-left">
+            <div class="site-auth-container">
+
+                <div class="auth-form">
+                    <form action="#" method="POST">
+                        <div>Вход на сайт:</div>
+                        <p><input name="login" placeholder="Имя или e-mail" type="text" value=""></p>
+                        <p><input name="password" placeholder="Пароль" type="password" value=""></p>
+                        <p><input type="submit" value="Войти"></p>
+                        <p><a href="#">Забыли пароль?</a></p>
+                    </form>
+                </div>
+
+                <div class="auth-other">
+                    <p>Войти с помощью:</p>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href="#"> <img alt="facebook auth" class="auth-other-img"
+                                                  src="images/auth/facebook_auth.png"> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img alt="vk auth" class="auth-other-img" src="images/auth/vk_auth.png">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img alt="odnoklassniki auth" class="auth-other-img"
+                                                  src="images/auth/odnoklassniki_auth.png"> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img alt="gmail auth" class="auth-other-img"
+                                                  src="images/auth/gmail_auth.png"> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img alt="mail.ru auth" class="auth-other-img"
+                                                  src="images/auth/mailru_auth.png"> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <img alt="yandex auth" class="auth-other-img"
+                                                  src="images/auth/yandex_auth.png"> </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="auth-nav">
+                    <a class="auth-button" href="registration.html">Зарегистрироваться</a>
+                    <p><a class="notification-accept-link" href="#">Получать уведомления</a></p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="site-content-main">
+            <div class="site-recipes-section">
+                <h1><a href="#">Лучшие рецепты</a></h1>
+
+                <div class="recipe-article">
+                    <div class="recipe-article_image">
+                        <a href="#">
+                            <img alt="Латвийские яблочные блины" src="images/examples/dishes_1.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="recipes-article_content">
+                        <ul class="recipes-article_breadcrumbs">
+                            <li>
+                                <a href="#"><span>Выпечка и десерты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Блины</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Евпропейская кухня</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Национальные блюда</span></a>
+                            </li>
+                        </ul>
+
+                        <h3><a href="#">Латвийские яблочные блины</a></h3>
+
+                        <div class="recipes-article_author">
+                            Автор:
+                            <a href="#">SomeUserName</a>
+                        </div>
+
+                        <div class="recipes-article_tags">
+                            <span>Ингридиенты:</span>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>Яйцо куриное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сливки</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Молоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло сливочное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мука пшеничная</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахар</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Соль</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Разрыхлитель теста</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Яблоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло растительное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Корица</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахарная пудра</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мед</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сметана</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipes-article_footer">
+                            <form action="#" class="recipes-article_add_form" method="POST">
+                                <button type="submit">Сохранить рецепт</button>
+                            </form>
+                            <ul class="recipes-article_icons">
+                                <li>
+                                    <span class="recipes-footer-icon icon-bookmark"
+                                          title="Добавили в избранное">10</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-likes">15</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-views" title="Просмотрело рецепт">236</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-article">
+                    <div class="recipe-article_image">
+                        <a href="#">
+                            <img alt="Латвийские яблочные блины" src="images/examples/dishes_1.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="recipes-article_content">
+                        <ul class="recipes-article_breadcrumbs">
+                            <li>
+                                <a href="#"><span>Выпечка и десерты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Блины</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Евпропейская кухня</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Национальные блюда</span></a>
+                            </li>
+                        </ul>
+
+                        <h3><a href="#">Латвийские яблочные блины</a></h3>
+
+                        <div class="recipes-article_author">
+                            Автор:
+                            <a href="#">SomeUserName</a>
+                        </div>
+
+                        <div class="recipes-article_tags">
+                            <span>Ингридиенты:</span>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>Яйцо куриное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сливки</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Молоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло сливочное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мука пшеничная</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахар</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Соль</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Разрыхлитель теста</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Яблоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло растительное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Корица</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахарная пудра</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мед</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сметана</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipes-article_footer">
+                            <form action="#" class="recipes-article_add_form" method="POST">
+                                <button type="submit">Сохранить рецепт</button>
+                            </form>
+                            <ul class="recipes-article_icons">
+                                <li>
+                                    <span class="recipes-footer-icon icon-bookmark"
+                                          title="Добавили в избранное">10</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-likes">15</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-views" title="Просмотрело рецепт">236</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-article">
+                    <div class="recipe-article_image">
+                        <a href="#">
+                            <img alt="Латвийские яблочные блины" src="images/examples/dishes_1.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="recipes-article_content">
+                        <ul class="recipes-article_breadcrumbs">
+                            <li>
+                                <a href="#"><span>Выпечка и десерты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Блины</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Евпропейская кухня</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Национальные блюда</span></a>
+                            </li>
+                        </ul>
+
+                        <h3><a href="#">Латвийские яблочные блины</a></h3>
+
+                        <div class="recipes-article_author">
+                            Автор:
+                            <a href="#">SomeUserName</a>
+                        </div>
+
+                        <div class="recipes-article_tags">
+                            <span>Ингридиенты:</span>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>Яйцо куриное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сливки</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Молоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло сливочное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мука пшеничная</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахар</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Соль</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Разрыхлитель теста</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Яблоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло растительное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Корица</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахарная пудра</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мед</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сметана</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipes-article_footer">
+                            <form action="#" class="recipes-article_add_form" method="POST">
+                                <button type="submit">Сохранить рецепт</button>
+                            </form>
+                            <ul class="recipes-article_icons">
+                                <li>
+                                    <span class="recipes-footer-icon icon-bookmark"
+                                          title="Добавили в избранное">10</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-likes">15</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-views" title="Просмотрело рецепт">236</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="recipe-article">
+                    <div class="recipe-article_image">
+                        <a href="#">
+                            <img alt="Латвийские яблочные блины" src="images/examples/dishes_1.jpeg">
+                        </a>
+                    </div>
+
+                    <div class="recipes-article_content">
+                        <ul class="recipes-article_breadcrumbs">
+                            <li>
+                                <a href="#"><span>Выпечка и десерты</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Блины</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Евпропейская кухня</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><span>Национальные блюда</span></a>
+                            </li>
+                        </ul>
+
+                        <h3><a href="#">Латвийские яблочные блины</a></h3>
+
+                        <div class="recipes-article_author">
+                            Автор:
+                            <a href="#">SomeUserName</a>
+                        </div>
+
+                        <div class="recipes-article_tags">
+                            <span>Ингридиенты:</span>
+                            <ul>
+                                <li>
+                                    <a href="#"><span>Яйцо куриное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сливки</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Молоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло сливочное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мука пшеничная</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахар</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Соль</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Разрыхлитель теста</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Яблоко</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Масло растительное</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Корица</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сахарная пудра</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Мед</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span>Сметана</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="recipes-article_footer">
+                            <form action="#" class="recipes-article_add_form" method="POST">
+                                <button type="submit">Сохранить рецепт</button>
+                            </form>
+                            <ul class="recipes-article_icons">
+                                <li>
+                                    <span class="recipes-footer-icon icon-bookmark"
+                                          title="Добавили в избранное">10</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-likes">15</span>
+                                </li>
+                                <li>
+                                    <span class="recipes-footer-icon icon-views" title="Просмотрело рецепт">236</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="site-footer">
+</footer>
+</body>
+</html>
