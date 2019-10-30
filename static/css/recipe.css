@@ -6,6 +6,10 @@
     text-align: center;
 }
 
+.recipe .ingredients-breadcrumbs {
+    margin-bottom: 16px;
+}
+
 .recipe h1 {
     display: inline-block;
     text-align: center;

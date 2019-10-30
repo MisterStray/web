@@ -178,18 +178,17 @@ body {
     text-align: center;
 }
 
-.auth-button, .auth-button:hover {
-    display: inline-block;
-    color: white;
-    background-color: #EF5918;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    border: solid 2px #EF5918;
-    border-radius: 40px;
-    padding: 8px;
+.auth-button.colored-button {
     width: 100%;
-    font-size: 16px;
+    background-color: #FFD500;
+    border-color: #FFD500;
+    border-width: 2px;
+}
+
+.auth-button.colored-button:hover {
+    margin: 1px 1px;
+    border-width: 2px;
+    border-color: black;
 }
 
 .auth-nav {
@@ -354,6 +353,10 @@ body {
     height: 180px;
 }
 
+.recipes-article_content .ingredients-breadcrumbs {
+    margin-bottom: 12px;
+}
+
 /** END REGION **/
 
 /** REGION .recipes-article-breadcrumbs **/
@@ -479,19 +482,6 @@ body {
 .recipes-article_add_form {
     float: left;
     padding-right: 32px;
-}
-
-.recipes-article_add_form button {
-    text-transform: uppercase;
-    font-size: 12px;
-    background: transparent;
-    border: 1px #E5E5E5 solid;
-    border-radius: 4px;
-    padding: 4px 12px;
-}
-
-.recipes-article_add_form button:hover {
-    border: 1px #666666 solid;
 }
 
 /** END REGION **/

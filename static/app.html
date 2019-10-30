@@ -10,6 +10,7 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/app.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
 </head>
 <body class="main-page">
 <header class="site-header">
@@ -67,9 +68,9 @@
                 <div class="auth-form">
                     <form action="#" method="POST">
                         <div>Вход на сайт:</div>
-                        <p><input name="login" placeholder="Имя или e-mail" type="text" value=""></p>
-                        <p><input name="password" placeholder="Пароль" type="password" value=""></p>
-                        <p><input type="submit" value="Войти"></p>
+                        <p><input name="login" placeholder="Имя или e-mail" type="text" required></p>
+                        <p><input name="password" placeholder="Пароль" type="password" required></p>
+                        <p><button class="auth-button colored-button" type="submit">Войти</button></p>
                         <p><a href="#">Забыли пароль?</a></p>
                     </form>
                 </div>
@@ -108,7 +109,9 @@
                 </div>
 
                 <div class="auth-nav">
-                    <a class="auth-button" href="registration.html">Зарегистрироваться</a>
+                    <a href="registration.html">
+                        <button class="auth-button colored-button" type="submit">Зарегистрироваться</button>
+                    </a>
                     <p><a class="notification-accept-link" href="#">Получать уведомления</a></p>
                 </div>
 
@@ -127,7 +130,7 @@
                     </div>
 
                     <div class="recipes-article_content">
-                        <ul class="recipes-article_breadcrumbs">
+                        <ul class="ingredients-breadcrumbs">
                             <li>
                                 <a href="#"><span>Выпечка и десерты</span></a>
                             </li>
@@ -199,7 +202,7 @@
 
                         <div class="recipes-article_footer">
                             <form action="#" class="recipes-article_add_form" method="POST">
-                                <button type="submit">Сохранить рецепт</button>
+                                <button class="button-simple" type="submit">Сохранить рецепт</button>
                             </form>
                             <ul class="recipes-article_icons">
                                 <li>
@@ -225,7 +228,7 @@
                     </div>
 
                     <div class="recipes-article_content">
-                        <ul class="recipes-article_breadcrumbs">
+                        <ul class="ingredients-breadcrumbs">
                             <li>
                                 <a href="#"><span>Выпечка и десерты</span></a>
                             </li>
@@ -297,7 +300,7 @@
 
                         <div class="recipes-article_footer">
                             <form action="#" class="recipes-article_add_form" method="POST">
-                                <button type="submit">Сохранить рецепт</button>
+                                <button class="button-simple" type="submit">Сохранить рецепт</button>
                             </form>
                             <ul class="recipes-article_icons">
                                 <li>
@@ -323,7 +326,7 @@
                     </div>
 
                     <div class="recipes-article_content">
-                        <ul class="recipes-article_breadcrumbs">
+                        <ul class="ingredients-breadcrumbs">
                             <li>
                                 <a href="#"><span>Выпечка и десерты</span></a>
                             </li>
@@ -395,7 +398,7 @@
 
                         <div class="recipes-article_footer">
                             <form action="#" class="recipes-article_add_form" method="POST">
-                                <button type="submit">Сохранить рецепт</button>
+                                <button class="button-simple" type="submit">Сохранить рецепт</button>
                             </form>
                             <ul class="recipes-article_icons">
                                 <li>
@@ -421,7 +424,7 @@
                     </div>
 
                     <div class="recipes-article_content">
-                        <ul class="recipes-article_breadcrumbs">
+                        <ul class="ingredients-breadcrumbs">
                             <li>
                                 <a href="#"><span>Выпечка и десерты</span></a>
                             </li>
@@ -493,7 +496,7 @@
 
                         <div class="recipes-article_footer">
                             <form action="#" class="recipes-article_add_form" method="POST">
-                                <button type="submit">Сохранить рецепт</button>
+                                <button class="button-simple" type="submit">Сохранить рецепт</button>
                             </form>
                             <ul class="recipes-article_icons">
                                 <li>
